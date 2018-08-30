@@ -5,11 +5,17 @@
  */
 package Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author Ismael(Figur8)
  */
-public class AlunoModel {
+
+@Entity
+public class Aluno {
+    @Id
     private String id;
     private String senha;
 

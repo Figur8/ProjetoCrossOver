@@ -5,11 +5,16 @@
  */
 package Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author Ismael(Figur8)
  */
-public class Questao {
+@Entity
+public class Questao {   
+    @Id
     private int Cod;
     private String enumciado;
 

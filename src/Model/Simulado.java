@@ -5,11 +5,17 @@
  */
 package Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author Ismael(Figur8)
  */
+
+@Entity
 public class Simulado {
+    @Id
     private int CodSimulado;
     private int codQuest;
     private String idAluno;
@@ -54,6 +60,9 @@ public class Simulado {
         this.peformance = peformance;
     }
     
-    //falta alguns métodos
+    /*
+      IDEIAS A SEREM DEBATIDAS APÓS CONCLUSÃO
+      -Inclusão de um cronômetro
+    */
     
 }

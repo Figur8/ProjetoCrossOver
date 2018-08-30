@@ -5,11 +5,16 @@
  */
 package Model;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
 /**
  *
  * @author Ismael(Figur8)
  */
+@Entity
 public class Opcoes {
+    @Id
     private int CodQuest;
     private String Descricao;
     private boolean valor;

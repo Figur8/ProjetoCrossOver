@@ -5,23 +5,22 @@
  */
 package Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
  * @author Ismael(Figur8)
  */
 @Entity
+@Table(name = "Questao")
 public class Questao {   
     @Id
     private int Cod;
+    @Column
     private String enumciado;
-
-    public Questao(int Cod, String enumciado) {
-        this.Cod = Cod;
-        this.enumciado = enumciado;
-    }
 
     public int getCod() {
         return Cod;

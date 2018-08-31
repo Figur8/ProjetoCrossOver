@@ -5,8 +5,11 @@
  */
 package Model;
 
+import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
@@ -14,9 +17,12 @@ import javax.persistence.Id;
  */
 
 @Entity
-public class Aluno {
+ @Table(name = "Aluno")
+public class Aluno implements Serializable {
     @Id
     private String id;
+    
+    @Column
     private String senha;
 
     public String getId() {
@@ -25,6 +31,14 @@ public class Aluno {
 
     public String getSenha() {
         return senha;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
     }
     
     

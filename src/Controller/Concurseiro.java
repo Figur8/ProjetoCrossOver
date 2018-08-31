@@ -5,6 +5,12 @@
  */
 package Controller;
 
+
+import Model.Aluno;
+import Model.AlunoJpaDAO;
+
+
+
 /**
  *
  * @author Ismae
@@ -12,10 +18,16 @@ package Controller;
 public class Concurseiro {
 
     /**
-     * @param args the command line arguments
+     * @param args
+     * @Ismael(figur8)
+     *
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        //Demonstração de uso dos metodos DAO
+        Aluno ok = new Aluno();
+        ok.setId("ewq");
+        ok.setSenha("asda");
+        AlunoJpaDAO.getInstance().merge(ok);
     }
     
 }

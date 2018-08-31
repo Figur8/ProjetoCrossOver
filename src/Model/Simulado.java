@@ -5,8 +5,10 @@
  */
 package Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
@@ -14,19 +16,16 @@ import javax.persistence.Id;
  */
 
 @Entity
+@Table(name = "Simulado")
 public class Simulado {
     @Id
     private int CodSimulado;
+    @Column
     private int codQuest;
+    @Column
     private String idAluno;
+    @Column
     private float peformance;
-
-    public Simulado(int CodSimulado, int codQuest, String idAluno, float peformance) {
-        this.CodSimulado = CodSimulado;
-        this.codQuest = codQuest;
-        this.idAluno = idAluno;
-        this.peformance = peformance;
-    }
 
     public int getCodSimulado() {
         return CodSimulado;

@@ -5,25 +5,27 @@
  */
 package Model;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 /**
  *
  * @author Ismael(Figur8)
  */
 @Entity
+ @Table(name = "Opcoes")
 public class Opcoes {
     @Id
-    private int CodQuest;
+    private int id;
+    
+    @Column
     private String Descricao;
+    @Column
     private boolean valor;
-
-    public Opcoes(int CodQuest, String Descricao, boolean valor) {
-        this.CodQuest = CodQuest;
-        this.Descricao = Descricao;
-        this.valor = valor;
-    }
+    @Column
+    private int CodQuest;
 
     public int getCodQuest() {
         return CodQuest;

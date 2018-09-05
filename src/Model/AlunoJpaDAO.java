@@ -33,19 +33,19 @@ public class AlunoJpaDAO {
         return instance;
     }
     
-    private AlunoJpaDAO(){
+    public AlunoJpaDAO(){
         entityManager = getEntityManager();
     }
 
     private EntityManager getEntityManager() {
-        EntityManagerFactory factory = Persistence.createEntityManagerFactory("CrudHibernatePU");
+        EntityManagerFactory factory = Persistence.createEntityManagerFactory("ConcurseiroPU");
         if(entityManager == null){
             entityManager = factory.createEntityManager();
         }
         return entityManager;
     }
     
-    public Aluno getById(final int id){
+    public Aluno getById(final String id){
         return entityManager.find(Aluno.class, id);
     }
     
@@ -84,7 +84,7 @@ public class AlunoJpaDAO {
             entityManager.getTransaction().rollback();
         }
     }
-    public void removeById(final int id){
+    public void removeById(final String id){
         try{
             Aluno aluno;
             aluno = getById(id) ;

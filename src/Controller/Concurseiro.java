@@ -8,6 +8,7 @@ package Controller;
 
 import Model.Aluno;
 import Model.AlunoJpaDAO;
+import Model.funcionaai;
 
 
 
@@ -24,10 +25,11 @@ public class Concurseiro {
      */
     public static void main(String[] args) {
         //Demonstração de uso dos metodos DAO
-        Aluno ok = new Aluno();
-        ok.setId("ewq");
-        ok.setSenha("asda");
-        AlunoJpaDAO.getInstance().merge(ok);
+        Aluno aluno = new Aluno();
+        aluno.setId("123");
+        aluno.setSenha("123");
+        AlunoJpaDAO.getInstance().merge(aluno);
+        System.out.println(AlunoJpaDAO.getInstance().getById("123"));
     }
     
 }

@@ -5,10 +5,22 @@
  */
 package Model;
 
+import javax.persistence.EntityManager;
+
 /**
  *
  * @author Ismae
  */
 public class OpcoesJpaDAO {
+    private static OpcoesJpaDAO instance;
+    protected EntityManager entityManager;
     
+    public static OpcoesJpaDAO getInstance(){
+        if(instance == null){
+            instance = new OpcoesJpaDAO();
+        }
+        return instance;
+    }
+    
+        
 }

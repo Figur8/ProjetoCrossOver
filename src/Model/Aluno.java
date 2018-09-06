@@ -9,13 +9,14 @@ import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.PersistenceContext;
 import javax.persistence.Table;
 
 /**
  *
  * @author Ismael(Figur8)
  */
-
+@PersistenceContext(unitName = "ConcurseiroPU")
 @Entity
  @Table(name = "Aluno")
 public class Aluno implements Serializable {
@@ -40,6 +41,9 @@ public class Aluno implements Serializable {
     public void setSenha(String senha) {
         this.senha = senha;
     }
-    
-    
+    public boolean autenticacao(String idA, String senhaA){
+        //Aideia é boa só não to tendo ideia agora de onde aplicar;
+
+        return false;
+    }
 }

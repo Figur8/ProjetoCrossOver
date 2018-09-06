@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.paint.*?>
-<?import javafx.scene.shape.*?>
-<?import javafx.scene.text.*?>
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <Label layoutX="321.0" layoutY="32.0" text="- Projeto Crossover -">
          <font>
@@ -21,7 +24,7 @@
             <ScrollBar orientation="VERTICAL" prefHeight="200.0" prefWidth="17.0" />
          </content>
       </ScrollPane>
-      <ScrollPane layoutX="228.0" layoutY="231.0" prefHeight="69.0" prefWidth="559.0">
+      <ScrollPane layoutX="228.0" layoutY="258.0" prefHeight="69.0" prefWidth="559.0">
          <content>
             <ScrollBar orientation="VERTICAL" prefHeight="66.0" prefWidth="17.0" />
          </content>
@@ -32,7 +35,7 @@
       <Button layoutX="463.0" layoutY="547.0" mnemonicParsing="false" text="Confirmar" />
       <StackPane layoutX="14.0" layoutY="32.0" prefHeight="544.0" prefWidth="200.0">
          <children>
-            <SplitPane prefHeight="200.0" prefWidth="200.0">
+            <SplitPane prefHeight="573.0" prefWidth="200.0">
                <contextMenu>
                   <ContextMenu>
                     <items>

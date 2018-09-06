@@ -27,7 +27,7 @@ public class AlunoJpaDAO {
     //instanciando EntityManager
     protected EntityManager entityManager;
    //instance == null é a mesma coisa que dizer(se nada estiver instanciado)
-    public static AlunoJpaDAO getInstance(){
+    public  AlunoJpaDAO getInstance(){
         if(instance == null){
             instance = new AlunoJpaDAO();
         }

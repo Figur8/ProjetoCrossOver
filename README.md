@@ -19,8 +19,8 @@ The project is still under development. there were some obstacles but his develo
 
 ## SKILLS
 
-![prototype-002](./prototype-002.svg)
-![prototype-003](./prototype-003.svg)
+<img width="64" src="./prototype-002.svg">
+<img width="64" src="./prototype-003.svg">
 
 ## What is a desktop system ?
 

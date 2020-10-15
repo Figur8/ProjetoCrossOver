@@ -20,7 +20,6 @@ The project is still under development. there were some obstacles but his develo
 ## SKILLS
 
 <img width="64" src="./prototype-002.svg">
-<img width="64" src="./prototype-003.svg">
 
 ## What is a desktop system ?
 
